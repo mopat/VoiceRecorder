@@ -122,8 +122,6 @@ public class MainActivity extends AppCompatActivity implements PlaybackListener,
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
                 if (recording.getState() == 1) {
-                    int progress = seekBar.getProgress();
-                    //Log.d("PROGRESS", String.valueOf(progress));
                     recording.pause();
                     //recording.play(lastPlayedBytes * 2);
                 }
